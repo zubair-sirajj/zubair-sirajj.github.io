@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribus Limited - Your One-Stop Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#home"><img src="images/tribus-logo.png" alt="Tribus Limited Logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box" id="home">
+            <h1>Welcome to Tribus Limited</h1>
+            <p>Providing top-notch digital solutions from conception to execution.</p>
+            <a class="hero-btn" href="#about">Learn More</a>
+        </div>
+    </header>
+
+    <section class="content" id="about">
+        <h1>About Us</h1>
+        <p>At Tribus Limited, we are dedicated to your digital success. Our team leverages cutting-edge technology and innovative strategies to boost your online presence.</p>
+        <img src="images/about-us.png" alt="About Us Image" />
+        <div class="details">
+            <article>
+                <h2>Our Mission</h2>
+                <p>To provide effective and efficient digital solutions tailored to each client's needs.</p>
+            </article>
+            <article>
+                <h2>Our Vision</h2>
+                <p>To be the leading digital services provider globally, known for innovation and quality.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="service" id="services">
+        <h1>Our Services</h1>
+        <p>Explore the wide range of services we offer tailored to enhance your digital footprint.</p>
+        <div class="row">
+            <div class="service-col">
+                <img src="images/web-design.png" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Custom, responsive, and engaging websites that captivate and convert.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/seo-marketing.png" alt="SEO and Marketing">
+                <h3>SEO & Marketing</h3>
+                <p>Maximize your reach and improve your rankings with tailored SEO strategies and comprehensive digital marketing.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/logo-design.png" alt="Logo Design">
+                <h3>Logo Design</h3>
+                <p>Creative and impactful logo designs that epitomize your brand identity and values.</p>
+            </div>
+            <div class="service-col">
+                <img src="images/image-design.png" alt="Image Design">
+                <h3>Image Design</h3>
+                <p>Stunning graphics and images designed to make your brand stand out in today's crowded marketplace.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blogs">
+        <h1>Latest Blogs</h1>
+        <p>Stay updated with the latest trends and insights in the world of digital marketing and design.</p>
+        <div class="row">
+            <div class="blog-col">
+                <img src="images/blog1.png" alt="Blog Post 1">
+                <h3>Enhancing Your Brand with Powerful Web Design</h3>
+            </div>
+            <div class="blog-col">
+                <img src="images/blog2.png" alt="Blog Post 2">
+                <h3>SEO Trends in 2024: What You Need to Know</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="images/tribus-footer-logo.png" alt="Tribus Limited Footer Logo">
+            <p>Connecting your brand to the world with precision and creativity.</p>
+            <div class="social-links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Tribus Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
