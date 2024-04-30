@@ -169,13 +169,13 @@ nav .fa{
     }
     .row {
         display: flex;
-        justify-content: space-around; /* Adjusts spacing around each column */
-        flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+        justify-content: space-around;
+        flex-wrap: wrap; 
     }
 
     @media (max-width: 700px) {
         .choose-col {
-            flex-basis: 100%; /* Takes up the full width */
+            flex-basis: 100%; 
             max-width: 100%;
         }
     }
@@ -200,20 +200,20 @@ nav .fa{
     
     .services .row {
         display: flex;
-        justify-content: space-around; /* Ensures space distribution around items */
-        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        justify-content: space-around; 
+        flex-wrap: wrap;
     }
     
     .service-col {
-        flex: 1 1 30%; /* Adjusts the flex-basis and allows growth and shrink */
-        max-width: 30%; /* Ensures that the column does not exceed 30% width */
+        flex: 1 1 30%; 
+        max-width: 30%; 
         margin-top: 20px;
         padding: 20px;
         background: #f2f2f2;
         border-radius: 10px;
         transition: transform 0.5s;
         cursor: pointer;
-        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        box-sizing: border-box; 
     }
     
     .service-col:hover {
@@ -227,31 +227,31 @@ nav .fa{
     }
     @media (max-width: 700px) {
         .services {
-            width: 90%; /* Gives a little more room on smaller screens */
+            width: 90%; 
             padding: 30px 0;
         }
     
         .services h1 {
-            font-size: 24px; /* Smaller font size for smaller screens */
+            font-size: 24px; 
         }
     
         .services p {
-            font-size: 16px; /* Adjust font size for readability */
+            font-size: 16px;
         }
     
         .services .row {
-            flex-direction: column; /* Stacks the service columns vertically */
-            align-items: center; /* Centers the items */
+            flex-direction: column; 
+            align-items: center;
         }
     
         .service-col {
-            flex-basis: 90%; /* Takes up more width on small screens */
-            max-width: 90%; /* Ensures no overflow */
-            margin-top: 15px; /* Reduces space between items */
+            flex-basis: 90%; 
+            max-width: 90%;
+            margin-top: 15px; 
         }
     
         .service-col img {
-            margin-bottom: 10px; /* Adds some space between the image and the text */
+            margin-bottom: 10px;
         }
     }
 
@@ -281,7 +281,7 @@ nav .fa{
     }
     
     .blog-col {
-        flex: 1 1 45%; /* Adjust based on how many columns you want per row */
+        flex: 1 1 45%; 
         margin: 20px 10px;
         padding: 15px;
         background: #f2f2f2;
@@ -317,7 +317,7 @@ nav .fa{
         text-align: center;
     }
     .blog-post p {
-        margin-bottom: 20px; /* Adds space below each paragraph */
+        margin-bottom: 20px; 
         text-align: justify;
     }
     
@@ -328,7 +328,6 @@ nav .fa{
         margin: 20px 0;
     }
     
-    /* Further styles to match your site's theme */
     
     @media (max-width: 768px) {
         .blogs .row {
