@@ -393,7 +393,7 @@ nav .fa{
         color: #aaa;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
         .social-links a {
             font-size: 18px;
         }
