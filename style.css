@@ -4,10 +4,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background: rgb(244, 241, 241);
+    padding-top: 0; /* Added top padding to prevent content from hiding under the nav */
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/banner.png');
+    background: linear-gradient(rgba(3, 3, 3, 0.586), rgba(0, 0, 0, 0.5)), url('images/banner.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -20,9 +25,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
+    position: fixed; /* Makes the navigation bar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the navigation bar is above other content */
 }
 nav img {
-    width: 90px;
+    width: 70px;
 }
 
 .nav-links {
@@ -33,7 +43,7 @@ nav img {
 .nav-links ul li {
     display: inline-block;
     list-style: none;
-    padding: 8px 12px;
+    padding: 8px 16px;
     position: relative;
 }
 
@@ -47,7 +57,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #10458a;
+    background: #1350a1;
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -65,7 +75,7 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
+   }
 
 .text-box h1 {
     font-size: 62px;
@@ -92,22 +102,28 @@ nav img {
 
 .hero-btn:hover {
     border: 1px solid #f0f1f1;
-    background: #10458a;
+    background: #072a58;
     transition: 1s;
 }
 nav .fa{
     display: none;
 }
+
+ 
 @media(max-width: 700px) {
     .text-box h1 {
-    font-size: 32px;
+    font-size: 36px;
+    }
+    .text-box p {
+        font-size: 18px;
+    
     }
     .nav-links ul li {
     display: block;
     }
     .nav-links{
     position: absolute;
-    background: #10458a;
+    background: #02152b;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -132,7 +148,7 @@ nav .fa{
         width: 80%;
         margin: auto;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 150px;
         min-height: 100vh;
   
     }
@@ -165,17 +181,17 @@ nav .fa{
     }
    
     .choose-col img {
-        width: 80%;
+        width: 100%;
     }
     .row {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
+        justify-content: space-around; /* Adjusts spacing around each column */
+        flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
     }
 
     @media (max-width: 700px) {
         .choose-col {
-            flex-basis: 100%; 
+            flex-basis: 100%; /* Takes up the full width */
             max-width: 100%;
         }
     }
@@ -186,7 +202,9 @@ nav .fa{
         width: 80%;
         margin: auto;
         text-align: center;
-        padding: 50px 0;
+        padding-top: 150px;
+        min-height: 100vh;
+      
     }
     
     .services h1 {
@@ -200,25 +218,27 @@ nav .fa{
     
     .services .row {
         display: flex;
-        justify-content: space-around; 
-        flex-wrap: wrap;
+        justify-content: space-around; /* Ensures space distribution around items */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
     }
     
     .service-col {
-        flex: 1 1 30%; 
-        max-width: 30%; 
+        flex: 1 1 30%; /* Adjusts the flex-basis and allows growth and shrink */
+        max-width: 30%; /* Ensures that the column does not exceed 30% width */
         margin-top: 20px;
         padding: 20px;
         background: #f2f2f2;
         border-radius: 10px;
         transition: transform 0.5s;
         cursor: pointer;
-        box-sizing: border-box; 
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
     }
     
     .service-col:hover {
         transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
+  
     
     .service-col img {
         width: 100%;
@@ -227,7 +247,7 @@ nav .fa{
     }
     @media (max-width: 700px) {
         .services {
-            width: 90%; 
+            width: 90%; /* Gives a little more room on smaller screens */
             padding: 30px 0;
         }
     
@@ -236,32 +256,33 @@ nav .fa{
         }
     
         .services p {
-            font-size: 16px;
+            font-size: 16px; 
         }
     
         .services .row {
-            flex-direction: column; 
-            align-items: center;
+            flex-direction: column; /* Stacks the service columns vertically */
+            align-items: center; /* Centers the items */
         }
     
         .service-col {
-            flex-basis: 90%; 
-            max-width: 90%;
-            margin-top: 15px; 
+            flex-basis: 90%; /* Takes up more width on small screens */
+            max-width: 90%; /* Ensures no overflow */
+            margin-top: 15px; /* Reduces space between items */
         }
     
         .service-col img {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Adds space between the image and the text */
         }
     }
 
-    /*--------- services ------------*/
+    /*--------- blogs ------------*/
 
     .blogs {
         width: 80%;
         margin: auto;
         text-align: center;
-        padding: 50px 0;
+        padding-top: 150px;
+        min-height: 100vh;
     }
     
     .blogs h1 {
@@ -281,7 +302,7 @@ nav .fa{
     }
     
     .blog-col {
-        flex: 1 1 45%; 
+        flex: 1 1 45%; /* Adjust columns per row */
         margin: 20px 10px;
         padding: 15px;
         background: #f2f2f2;
@@ -298,11 +319,12 @@ nav .fa{
     
     .blog-col:hover {
         transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
-    
+   
     .read-more {
         text-decoration: none;
-        color: #10458a;
+        color: #0e0bb3;
         font-weight: bold;
     }
     .blog-post {
@@ -310,14 +332,16 @@ nav .fa{
         margin: auto;
         padding: 20px;
         line-height: 1.6;
+        margin-top: 130px;
     }
+    
     
     .blog-post h1 {
         color: #333;
         text-align: center;
     }
     .blog-post p {
-        margin-bottom: 20px; 
+        margin-bottom: 20px; /* Adds space below each paragraph */
         text-align: justify;
     }
     
@@ -327,9 +351,8 @@ nav .fa{
         display: block;
         margin: 20px 0;
     }
-    
-    
-    @media (max-width: 768px) {
+      
+    @media (max-width: 700px) {
         .blogs .row {
             flex-direction: column;
         }
