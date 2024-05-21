@@ -4,10 +4,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background: rgb(244, 241, 241);
+    padding-top: 0; 
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/banner.png');
+    background: linear-gradient(rgba(3, 3, 3, 0.586), rgba(0, 0, 0, 0.5)), url('images/banner.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -20,9 +25,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 nav img {
-    width: 90px;
+    width: 70px;
 }
 
 .nav-links {
@@ -33,7 +43,7 @@ nav img {
 .nav-links ul li {
     display: inline-block;
     list-style: none;
-    padding: 8px 12px;
+    padding: 8px 16px;
     position: relative;
 }
 
@@ -47,7 +57,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #10458a;
+    background: #1350a1;
     display: block;
     margin:auto;
     transition: 0.5s;
@@ -65,7 +75,7 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
+   }
 
 .text-box h1 {
     font-size: 62px;
@@ -92,22 +102,28 @@ nav img {
 
 .hero-btn:hover {
     border: 1px solid #f0f1f1;
-    background: #10458a;
+    background: #072a58;
     transition: 1s;
 }
 nav .fa{
     display: none;
 }
+
+ 
 @media(max-width: 700px) {
     .text-box h1 {
-    font-size: 32px;
+    font-size: 36px;
+    }
+    .text-box p {
+        font-size: 18px;
+    
     }
     .nav-links ul li {
     display: block;
     }
     .nav-links{
     position: absolute;
-    background: #10458a;
+    background: #02152b;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -132,7 +148,7 @@ nav .fa{
         width: 80%;
         margin: auto;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 150px;
         min-height: 100vh;
   
     }
@@ -145,25 +161,50 @@ nav .fa{
     .about p {
         color: #555;
     }
+    .about h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .about h3 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+    }
     .choose-col {
-        flex-basis: 32%;
+        flex-basis: 30%;
         border-radius: 10px;
-        margin: 30px;
+        margin: 5px;
         position: relative;
         overflow: hidden;
     }
+   
     .choose-col img {
         width: 100%;
     }
+    .row {
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;
+    }
 
-    
+    @media (max-width: 700px) {
+        .choose-col {
+            flex-basis: 100%; 
+            max-width: 100%;
+        }
+    }
+
     /*--------- services ------------*/
 
     .services {
         width: 80%;
         margin: auto;
         text-align: center;
-        padding: 50px 0;
+        padding-top: 150px;
+        min-height: 100vh;
+      
     }
     
     .services h1 {
@@ -177,7 +218,7 @@ nav .fa{
     
     .services .row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-around; 
         flex-wrap: wrap;
     }
     
@@ -190,12 +231,14 @@ nav .fa{
         border-radius: 10px;
         transition: transform 0.5s;
         cursor: pointer;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
     
     .service-col:hover {
         transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
+  
     
     .service-col img {
         width: 100%;
@@ -217,14 +260,14 @@ nav .fa{
         }
     
         .services .row {
-            flex-direction: column;
+            flex-direction: column; 
             align-items: center; 
         }
     
         .service-col {
             flex-basis: 90%; 
-            max-width: 90%;
-            margin-top: 15px; 
+            max-width: 90%; 
+            margin-top: 15px;
         }
     
         .service-col img {
@@ -232,13 +275,14 @@ nav .fa{
         }
     }
 
-    /*--------- services ------------*/
+    /*--------- blogs ------------*/
 
     .blogs {
         width: 80%;
         margin: auto;
         text-align: center;
-        padding: 50px 0;
+        padding-top: 150px;
+        min-height: 100vh;
     }
     
     .blogs h1 {
@@ -275,11 +319,12 @@ nav .fa{
     
     .blog-col:hover {
         transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
-    
+   
     .read-more {
         text-decoration: none;
-        color: #10458a;
+        color: #0e0bb3;
         font-weight: bold;
     }
     .blog-post {
@@ -287,14 +332,17 @@ nav .fa{
         margin: auto;
         padding: 20px;
         line-height: 1.6;
+        margin-top: 130px;
     }
     
+    
     .blog-post h1 {
+        font-size: 40px;
         color: #333;
         text-align: center;
     }
     .blog-post p {
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
         text-align: justify;
     }
     
@@ -304,8 +352,8 @@ nav .fa{
         display: block;
         margin: 20px 0;
     }
-        
-    @media (max-width: 768px) {
+      
+    @media (max-width: 700px) {
         .blogs .row {
             flex-direction: column;
         }
@@ -346,7 +394,7 @@ nav .fa{
         color: #aaa;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
         .social-links a {
             font-size: 18px;
         }
