@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribus Limited - Your One-Stop Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/tribus-logo.png" alt="Tribus Limited Logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#blogs">Blogs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <article class="blog-post">
+        <h1>Enhancing Your Brand with Powerful Web Design</h1>
+        <img src="images/blog1.png" alt="Tips for Enhancing Your Brand through Web Design">
+        <p>Today's digital landscape demands not only having a functional website but one that captivates and engages your audience. Effective web design is pivotal in building a brand identity that stands out from the competition.</p>
+        <p>Web design influences user perception and interactions. By focusing on aesthetics, user experience, and accessibility, businesses can significantly improve their online presence. Effective design is not just about visual appeal but also usability and customer journey optimization.</p>
+        <p>Here are key aspects to consider when designing your website:</p>
+            <li><strong>User Experience (UX):</strong> Ensures the site is easy to navigate and interact with.</li>
+            <li><strong>Responsive Design:</strong> Guarantees your site looks great on all devices, from desktops to smartphones.</li>
+            <li><strong>Branding:</strong> Incorporates elements that reflect your brand’s identity consistently across all pages.</li>
+        </ul>
+        <p>Implementing these principles can lead to a more engaging site that converts visitors into customers and enhances your brand's online footprint.</p>
+    
+    </article>
+
+  <footer>
+        <div class="footer-content">
+            <img src="images/tribus-logo.png" alt="Tribus Limited Logo">
+            <p>Strategy, Implementation, and Growth- unified under one roof!</p>
+            <div class="social-links">
+                <a href="#" title="Follow us on Facebook" aria-label="Facebook"> 
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" title="Follow us on Twitter" aria-label="Twitter">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="#" title="Follow us on Instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" title="Connect with us on LinkedIn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Tribus Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
