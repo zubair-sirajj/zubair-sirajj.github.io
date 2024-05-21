@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribus Limited - Your One-Stop Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/tribus-logo.png" alt="Tribus Limited Logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#blogs">Blogs</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <article class="blog-post">
+        <h1>SEO Trends in 2024: What You Need to Know</h1>
+        <img src="images/blog2.png" alt="Overview of SEO Trends for 2024">
+        <p>As search engines evolve, so does the landscape of SEO. 2024 is seeing major trends that could redefine how we approach SEO strategies.</p>
+        <p>One of the significant shifts is the increased importance of semantic search. Search engines are getting better at understanding the context and nuances of user queries. This means that content must be more targeted and naturally incorporate key phrases related to the topics rather than merely including keywords.</p>
+        <p>Another trend is the heightened focus on user experience (UX). Sites that load quickly, provide easy navigation, and are accessible will rank higher in search results. Additionally, mobile-first indexing remains a priority, making mobile optimization a critical factor.</p>
+        <p>Here's how you can adapt to these changes:</p>
+        <ul>
+            <li><strong>Content Quality:</strong> Write high-quality, engaging content that addresses user needs and questions.</li>
+            <li><strong>Technical SEO:</strong> Ensure your site is technically sound with a strong focus on speed and mobile usability.</li>
+            <li><strong>User Engagement:</strong> Improve user engagement metrics such as time on site and bounce rates.</li>
+        </ul>
+        <p>Staying ahead of these trends will help you maintain and improve your search engine rankings in 2024 and beyond.</p>
+        
+    </article>
+
+  <footer>
+        <div class="footer-content">
+            <img src="images/tribus-logo.png" alt="Tribus Limited Logo">
+            <p>Strategy, Implementation, and Growth- unified under one roof!</p>
+            <div class="social-links">
+                <a href="#" title="Follow us on Facebook" aria-label="Facebook"> 
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" title="Follow us on Twitter" aria-label="Twitter">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="#" title="Follow us on Instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" title="Connect with us on LinkedIn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Tribus Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
